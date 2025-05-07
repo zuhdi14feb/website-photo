@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wakroel Photowork</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .paket-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .paket {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .paket button {
+      margin-top: 10px;
+      padding: 10px;
+      background: #007b5e;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .detail {
+      display: none;
+      margin-top: 10px;
+      text-align: left;
+    }
+
+    .whatsapp-btn {
+      background: #25D366;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Wakroel Photowork</h1>
+
+  <div class="paket-container">
+    <div class="paket">
+      <h2>Paket Basic</h2>
+      <button onclick="toggleDetail('basic')">Lihat Isi Paket</button>
+      <div id="basic" class="detail">
+        <ul>
+          <li>5 Foto Editan</li>
+          <li>Durasi 30 Menit</li>
+          <li>1 Lokasi Pemotretan</li>
+        </ul>
+        <a href="https://wa.me/6281362515287?text=Halo%2C+saya+ingin+memesan+Paket+Basic+Wakroel+Photowork" class="whatsapp-btn" target="_blank">Pesan via WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="paket">
+      <h2>Paket Premium</h2>
+      <button onclick="toggleDetail('premium')">Lihat Isi Paket</button>
+      <div id="premium" class="detail">
+        <ul>
+          <li>15 Foto Editan</li>
+          <li>Durasi 1 Jam</li>
+          <li>2 Lokasi Pemotretan</li>
+          <li>Softcopy & Cetak 10 Foto</li>
+        </ul>
+        <a href="https://wa.me/6281362515287?text=Halo%2C+saya+ingin+memesan+Paket+Premium+Wakroel+Photowork" class="whatsapp-btn" target="_blank">Pesan via WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="paket">
+      <h2>Paket Eksklusif</h2>
+      <button onclick="toggleDetail('eksklusif')">Lihat Isi Paket</button>
+      <div id="eksklusif" class="detail">
+        <ul>
+          <li>30 Foto Editan</li>
+          <li>Durasi 2 Jam</li>
+          <li>3 Lokasi Pemotretan</li>
+          <li>Softcopy + Cetak Album</li>
+          <li>Video Highlight 1 Menit</li>
+        </ul>
+        <a href="https://wa.me/6281362515287?text=Halo%2C+saya+ingin+memesan+Paket+Eksklusif+Wakroel+Photowork" class="whatsapp-btn" target="_blank">Pesan via WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleDetail(id) {
+      const detail = document.getElementById(id);
+      detail.style.display = (detail.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
